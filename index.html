@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <form autocomplete="off">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="text" required>
+                <label>Usuário</label>
+                <span class="icon">
+                    <i class="fa-regular fa-user"></i>
+                </span>
+                <span class="line"></span>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label>Senha</label>
+                <span class="icon" id="togglesenha">
+                    <i class="far fa-eye-slash"></i>
+                </span>
+                <span class="line"></span>
+            </div>
+            <div class="check">
+                <label>
+                    <input type="checkbox">
+                    lembre-me
+                </label>
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+            <button type="submit">Login</button>
+            <div class="registre-se">
+                <p>Não tem conta ? <a href="#">Registre-se</a></p>
+            </div>    
+        </form>
+    </div>
+    
+    <script src="./java.js"></script>
+</body>
+
+</html>

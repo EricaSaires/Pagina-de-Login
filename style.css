@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, rgb(17, 176, 197), rgb(190, 144, 190));
+}
+
+.wrapper{
+    width: 400px;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dbd6d9df;
+    border-radius: 15px;
+    box-shadow:0 0 10px #222222;
+}
+
+form h2{
+   color: black; 
+   font-weight: 700;
+   text-align: center;
+   letter-spacing: 1.6px;
+}
+
+.input-group{
+    position: relative;
+    width: 320px;
+    margin-top: 30px;
+}
+
+.input-group input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    letter-spacing: 0.8px;
+    z-index: 9;
+}
+
+.input-group label{
+    position: absolute;
+    left: 0;
+    padding: 20px 0 10px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    letter-spacing: 0.8px;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.input-group input:valid ~ label,
+.input-group input:focus ~ label{
+    color: rgb(0, 0, 0);
+    transform: translateX(0) translateY(-34px);
+    font-size: 12px;
+}
+
+.input-group .icon{
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    z-index: 9;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group .line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(212, 162, 212);
+    border-radius: 5px;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.input-group input:valid ~ .line,
+.input-group input:focus ~ .line{
+    height: 44px;
+}
+
+.check{
+    display: flex;
+    justify-content: space-around;
+}
+
+.check label,
+.check a{
+    margin: 20px 0;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.check label{
+    display: flex;
+    align-items: center;
+    color: #e084c9cc;
+    position: relative;
+    padding-left: 20px;
+}
+
+.check label input{
+    appearance: none;
+    position: absolute;
+    left: 0;
+}
+
+.check label input::before{
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.check label input:checked::before{
+    content: "\2714";
+    background: rgb(214, 162, 203);
+}
+
+.check a{
+    text-decoration: none;
+}
+
+form button{
+    width: 100%;
+    height: 44px;
+    border: none;
+    outline: none;
+    color: white;
+    background: plum;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+form button:active{
+    opacity: 0.8;
+}
+
+.registre-se{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.registre-se p{
+    font-size: 14px;
+    color: black;
+}
+
+.registre-se p a{
+    color: black;
+    text-decoration: none;
+}
